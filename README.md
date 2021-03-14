@@ -19,7 +19,7 @@ import AppInstallDate from 'react-native-app-install-date';
 
 // ...
 
-const result = await AppInstallDate.multiply(3, 7);
+const result = await AppInstallDate.getDateTime(format);
 ```
 
 ## Contributing
