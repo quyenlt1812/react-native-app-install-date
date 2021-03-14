@@ -8,10 +8,14 @@ Get the install date of app
 npm install react-native-app-install-date
 ```
 
+```sh
+yarn add react-native-app-install-date
+```
+
 ## Usage
 
 ```js
-import AppInstallDate from "react-native-app-install-date";
+import AppInstallDate from 'react-native-app-install-date';
 
 // ...
 
