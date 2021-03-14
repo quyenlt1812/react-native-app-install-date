@@ -4,10 +4,10 @@ import { StyleSheet, View, Text } from 'react-native';
 import AppInstallDate from 'react-native-app-install-date';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    AppInstallDate.multiply(3, 7).then(setResult);
+    AppInstallDate.getDateTime('MM/dd/yyyy').then(setResult);
   }, []);
 
   return (

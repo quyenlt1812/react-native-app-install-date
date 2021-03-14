@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 type AppInstallDateType = {
-  multiply(a: number, b: number): Promise<number>;
+  getDateTime(format: string): Promise<string>;
 };
 
 const { AppInstallDate } = NativeModules;

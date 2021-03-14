@@ -18,7 +18,7 @@ class AppInstallDateModule(reactContext: ReactApplicationContext) : ReactContext
     // Example method
     // See https://reactnative.dev/docs/native-modules-android
     @ReactMethod
-    fun multiply(a: Int, b: Int, promise: Promise) {
+    fun getDateTime(format: String, promise: Promise) {
 
       try{
             var installedTime: Long = reactApplicationContext.getPackageManager().getPackageInfo(reactApplicationContext.getPackageName(),0).firstInstallTime;
