@@ -15,9 +15,8 @@ RCT_REMAP_METHOD(getDateTime,
   __autoreleasing NSError *error;
   NSDate *installDate = [[[NSFileManager defaultManager] attributesOfItemAtPath:urlToDocumentsFolder.path error:&error] objectForKey:NSFileCreationDate];
   
-  
   NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-  [dateFormatter setDateFormat:@"dd/MM/yyyy hh:mm:ss"];
+  [dateFormatter setDateFormat:@"yyyy-MM-dd"];
   
   NSString *stringDate = [dateFormatter stringFromDate:installDate];
 
