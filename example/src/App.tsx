@@ -7,7 +7,7 @@ export default function App() {
   const [result, setResult] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    AppInstallDate.getDateTime('yyyy-MM-dd').then(setResult);
+    AppInstallDate.getDateTime('yyyy/MM/dd hh:mm:ss').then(setResult);
   }, []);
 
   return (
